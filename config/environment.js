@@ -1,8 +1,6 @@
-/* jshint node: true */
-
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'super-rentals',
+    modulePrefix: 'super-rentals',  
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -10,11 +8,14 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
       }
+    },
+
+    firebase: {
+      apiKey: 'AIzaSyDgJWFIMnFbwoZfvBkEkTPH43oci2vLCng',
+      authDomain: 'super-rentals-f9dc1.firebaseapp.com',
+      databaseURL: 'https://super-rentals-f9dc1.firebaseio.com',
+      storageBucket: 'super-rentals-f9dc1.appspot.com'
     },
 
     APP: {
